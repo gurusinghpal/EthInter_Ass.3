@@ -19,18 +19,22 @@ To run the contract, follow these steps:
 1. Install the project dependencies by running the following command:
 
    ```
-   npm install
+   npm i
    ```
-2. Start a blockchain locally by running the command: 
+
+2. Install 'hardhat' by running the command:
+   
+   ```
+   npm install --save-dev hardhat
+   ```
+   
+4. Start a blockchain locally by running the command:
+   
    ```
    npx hardhat node
    ```
-3. Test the contract by running the command: 
-   ```
-   npx hardhat test
-   ```
 
-4. Deploy the MyToken smart contract by running the deployment script:
+6. Deploy the MyToken smart contract by running the deployment script:
 
    ```
    npx hardhat run scripts/deploy.js --network localhost
